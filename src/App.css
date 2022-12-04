@@ -54,3 +54,8 @@
   border-radius: 30px;
   box-shadow: inset 4px 4px 4px 1.5px rgb(0, 0, 0);
 }
+
+#particles-js {
+  background: black;
+  height: 100vh;
+}
