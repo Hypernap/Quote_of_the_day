@@ -3,6 +3,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 const App1 = () => {
+    let scr=window.screen.width/20;
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -83,7 +84,7 @@ const App1 = () => {
                             enable: false,
                             area: 900,
                         },
-                        value: 80,
+                        value: Math.max(scr ,10),
                     },
                     opacity: {
                         value: 0.5,
