@@ -42,7 +42,7 @@
   width: 60vw;
   text-align: center;
   justify-content: space-around;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(7px);
   box-shadow: inset 4px 4px 4px 1.5px rgb(0, 0, 0);
   border-radius: 30px;
   font-size: xx-large;
@@ -53,9 +53,4 @@
   backdrop-filter: blur(10px);
   border-radius: 30px;
   box-shadow: inset 4px 4px 4px 1.5px rgb(0, 0, 0);
-}
-
-#particles-js {
-  background: black;
-  height: 100vh;
 }

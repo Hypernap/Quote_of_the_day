@@ -1,6 +1,7 @@
 import './App.css';
 import axios from "axios";
 import { useEffect, useRef, useState } from 'react';
+import App1 from './backpartical';
 // import Spinner from "react-spinkit";
 
 
@@ -22,9 +23,12 @@ import { useEffect, useRef, useState } from 'react';
 
 
 
-function App() {
-  const flag= useRef(false);
 
+function App() {
+  // let option =["happiness","success","education","movies","morning","learning","inspirational"];
+  // let catogory = option[(Math.random()*100)%7]
+  const flag= useRef(false);  
+  // console.log(catogory);
 //global data a nwhich required seta to mutable data
 const [a,seta] =  useState({data:"kk"});
 
@@ -48,7 +52,6 @@ useEffect(()=>{
   flag.current=true
 },[])
 return ( 
-  <div className='particles-js'>
     <div className="App">
       <header className="App-header">
         <div className='card'>
@@ -58,7 +61,7 @@ return (
         <div className='btn1' onClick={getdata}>Next</div>
       </header>
     </div>
-    </div>
+    
   );
 }
 
